@@ -1,0 +1,19 @@
+<div>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <nav>
+        <ul class='nav-bar'>
+            <li class='logo'>
+                <p routerLink="/home">My Portfolio</p>
+            </li>
+
+            <input type='checkbox' id='check' />
+            <span class="menu">
+                <li><p routerLink="about-me"(click)="hideSidenav()"> About Me </p></li>
+                <li><p routerLink="past-projects"(click)="hideSidenav()"> Past Projects </p></li>
+                <li><p routerLink="contact"(click)="hideSidenav()"> Contact </p></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    padding-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+    padding-bottom: 15px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-left{
+    padding: 10px;
+    flex: 15%;
+}
+
+.flex-container-right{
+    padding: 10px;
+    flex: 70%;
+    padding-bottom: 20px;
+}
+
+.flex-item-right-box{
+    border: #244858 solid 2px;
+    background-color: #244858;
+    padding: 5vh;
+    border-radius: 3px;
+}
+
+.flex-item-left-text{
+    writing-mode: vertical-lr;
+    border-bottom: #e64833 2px solid;
+    padding-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #ffff;
+}
+
+
+/* YUNG ICONS TO */
+i{
+    /* padding-top: 15px; */
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: #244858;
+}
+i:hover{
+    color: #e64833;    
+}
+
+.p-title{
+    color: #e64833;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .flex-item-left-text{
+        writing-mode: horizontal-tb;
+    }
+    .flex-container-left{
+        border: #244858 solid 2px;
+    }
+}
+
+
+
+.CRUD{
+    flex: 30%;
+    /* border: 2px solid; */    
+    border-radius: 3px;
+    padding: 20px;
+}
+
+
+.outer-container{
+    /* background-color: yellow; */
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.input-add{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+
+input{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid black;
+}
+
+.newTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    color: grey;
+}
+
+.newTask:hover{
+    cursor: pointer;
+    color: #e64833;
+}
+
+.removeallcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+/* DELETE ALL BUTTON */
+.removeallcont button{
+    background-color: rgb(187, 93, 93);
+    border: none;
+    color: white;
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+.removeallcont button:hover{
+    background-color: white;
+    color: rgb(187, 93, 93);
+    cursor: pointer;
+}
+
+.notes-card{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    height: max-content;
+    width: 100%;
+    word-break: break-all;
+}
+
+.notes-card p{
+    line-height: 30px;
+    text-align: justify;
+    color: #e64833;
+}
+
+/* EDIT AND REMOVE ONLY ONE BUTTON SOY */
+.notes-card button{
+    background-color: #ffffff;
+    color: #e64833;   
+    font-size: 15px;
+    width: 30px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #e64833;
+    align-items: center;
+    justify-content: center;
+    padding-top: -20px;
+}
+
+.notes-card button:hover{
+    cursor: pointer;
+    background-color: rgb(187, 93, 93);;
+    color: white;
+}
+
+.allnotes{
+    display: flex;
+    flex-direction: column;
+}

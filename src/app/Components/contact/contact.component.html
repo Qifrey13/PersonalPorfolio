@@ -1,0 +1,50 @@
+<div class="flex-container">
+    <div class="flex-container-left">
+        <div class="flex-item-left">
+            <h1>My socials</h1>
+        </div>
+
+        <div class="flex-item-left-top">
+            <a href="https://m.facebook.com/carbonado.ruffin" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <p class="flex-item-left-text">Facebook</p>
+     
+            <a href="mailto:buffin08@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <p class="flex-item-left-text">Gmail</p>
+     
+            <a href="https://ph.linkedin.com/in/blq-ruffin-3b5843298"><i class="fa-brands fa-linkedin"></i></a>
+            <p class="flex-item-left-text">LinkedIn</p>
+        </div>
+    </div>
+
+    <div class="flex-container-right">
+        <div class="flex-item-right">
+            <h1> Got any tips for me? </h1>
+            <p class="p-title">Comment down below!</p>
+        </div>
+
+        <div class="flex-item-right-box">
+            <div class="CRUD">
+                <div class="outer-container">
+                  <div class="input-add">
+                    <input #addTask type="text" placeholder="Insert Comment">
+                    <button (click)="newtask(addTask.value)" class="newTask">+</button>
+                  </div>
+                  <div class="allnotes">
+                    <div class="notes-card" *ngFor="let item of tasks">
+                      <p *ngIf="!item.isEditing">{{item.title}}</p>
+                      <input *ngIf="item.isEditing" [(ngModel)]="item.title" />
+                      <button (click)="removetask(item.id)"><i class="fa-solid fa-eraser" aria-hidden="true"></i></button>
+                      <button *ngIf="!item.isEditing" (click)="editTask(item)"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></button>
+                      <button *ngIf="item.isEditing" (click)="updateTask(item)"><i class="fa fa-check" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                  <div class="removeallcont" *ngIf="tasks.length >= 1">
+                    <button (click)="removealltasks()"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+
