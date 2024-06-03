@@ -3,8 +3,8 @@
 }
 
 h1{
-    font-family: 'Times New Roman', Times, serif;
     color: #244858;
+    font-family: 'Times New Roman', Times, serif;
     padding-top: 50px;
     padding-bottom: 15px;
 }
@@ -47,8 +47,8 @@ h1{
 i{
     color: #244858;
     font-size: 25px;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 7px;
+    padding-bottom: 15px;
 }
 i:hover{
     color: #e64833;    
