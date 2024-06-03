@@ -1,13 +1,13 @@
 .nav-bar {
-    width: 100%;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    position: fixed;
     background-color:#244858;
     padding: 16px 20px;
     margin-top: -5px;
+    width: 100%;
 }
 .menu {
     display: flex;
@@ -16,17 +16,17 @@
 .menu li {padding-right: 30px;}
 .menu li p {
     display: inline-block;
-    text-decoration: none;
-    color: 	#e64833;
     text-align: center;
+    text-decoration: none;
     position: relative;
+    color: 	#e64833;
     font-family: 'Courier New', Courier, monospace;
     cursor: pointer;
 }
 .logo{
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    color: white;
     cursor: pointer;
 }
 
@@ -38,8 +38,8 @@
 .open-menu , .close-menu {
     position: absolute;
     color: rgb(255, 255, 255);
-    cursor: pointer;
     font-size: 1.5rem;
+    cursor: pointer;
     display: none;
 }
 .open-menu {

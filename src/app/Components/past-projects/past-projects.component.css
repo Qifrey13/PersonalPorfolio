@@ -2,37 +2,35 @@
   box-sizing: border-box;
 }
 
-
-
 .title {
   text-align: center;
-  padding: 60px;
-  margin-bottom: -40px;
   color: #e64833;
   font-family: 'Courier New', Courier, monospace;
+  padding: 60px;
+  margin-bottom: -40px;
 }
 
 .sub-title{
   text-align: center;
+  color: #244858;
+  font-family: 'Times New Roman', Times, serif;
   margin-bottom: 20px;
-  color: #e64833;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   padding-left: 13%;
   padding-bottom: 90px;
+  width: 100%;
 }
 
 .column {
   flex: 25%;
-  max-width: 25%;
-  padding: 10px;
   border: #244858 solid 3px;
+  padding: 10px;
   margin: 20px;
+  max-width: 25%;
 }
 
 .column img {
@@ -44,42 +42,32 @@ div.column:hover{
   cursor: pointer;
 }
 
-/* p:hover{
-  background-color: #e64833;
-  border: #e64833 3px;
-} */
-
 img{
   height: auto;
   width: 50%;
 }
 
 p{
+  text-align: center;
   color: #ffff;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
   border: #244858 solid 3px;
+  background-color: #244858;
   padding: 2px;
   margin-top: 10%;
-  text-align: center;
-  background-color: #244858;
   word-break: break-all;
 }
 
-/* p:hover{
-  border:#e64833 2px solid ;
-  cursor: pointer;
-} */
-
 
 .GIF-Pikachu{
+  text-align: center;
   display: block;
+  border: dotted yellow 2px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
-  width: 300px;
-  border: dotted yellow 2px;
   padding: 5px;
+  width: 300px;
 }
 
 
@@ -100,6 +88,6 @@ p{
 }
 @media (max-width: 500px){
   .column{
-    margin-left: 8vh;
+    margin-left: 7.5vh;
   }
 }

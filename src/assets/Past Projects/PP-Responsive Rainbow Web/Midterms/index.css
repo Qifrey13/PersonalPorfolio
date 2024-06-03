@@ -1,0 +1,122 @@
+body{
+    background-color: red;
+    text-align: center;
+    background-size: 450px;
+    padding: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+@media(max-width: 1500px){
+    body {
+        background-color: red; 
+        background-image: url(https://i.scdn.co/image/ab67616d0000b273ddc43da988dc80fac12c53ac);  
+    }
+    .Aurora{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color:crimson;
+        border: groove 2px;
+        border-color: red;
+    }
+
+}
+
+
+@media(max-width: 1300px){
+    body {
+        background-color: orange;
+        background-image: url(https://mavnewspaper.com/wp-content/uploads/2021/04/Life-of-Pablo-Image.jpg) ;
+    }
+    .Aurora{
+        opacity: 0;
+    }
+    .ye{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: orangered;
+        border: dotted 2px;
+    }
+}
+
+@media(max-width: 1200px){
+    body {
+        background-color: yellow;
+        background-image: url(https://media.pitchfork.com/photos/59663e05ec814a1a5898c3a3/1:1/w_600/tyler-the-creator-flower-boy-cover-1.jpg);
+    }
+    .ye{
+        opacity: 0;
+    }
+    .tyler{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: yellow;
+        border: double;
+        border-color: lightsalmon;
+    }
+}
+
+
+@media(max-width: 1100px){
+    body {
+        background-color: green;
+        background-image: url(https://i.pinimg.com/564x/ad/94/8e/ad948e77190073babed7f4a440ebf83b.jpg) ;
+    }
+    .tyler{
+        opacity: 0;
+    }
+    .frank{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: forestgreen;
+        border: outset 2px;
+        border-color: forestgreen;
+    }
+}
+
+
+@media(max-width: 1000px){
+    body {
+        background-color: blue;
+        background-image: url(https://i.pinimg.com/736x/ce/e7/65/cee7655f6a82454e9037a633f4f63606.jpg);
+    }
+    .frank{
+        opacity: 0;
+    }
+    .sufjan{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: aqua;
+        border: inset 2px;
+        border-color: aqua;
+    }
+}
+
+@media(max-width: 900px){
+    body {
+        background-color: indigo;
+        background-image: url(https://i.pinimg.com/564x/f7/9b/20/f79b20b865139aefcd297afa8c05817f.jpg) ;
+    }
+    .sufjan{
+        opacity: 0;
+    }
+    .chase{
+        color: pink;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: ridge 2px;
+        border-color:pink;
+    }
+}
+
+@media(max-width: 800px){
+    body {
+        background-color: purple;
+        color: whitesmoke;
+        background-image: url(https://i.pinimg.com/564x/3d/9e/aa/3d9eaab92071c45eae78b7b51bc6753a.jpg) ;
+    }
+    .chase{
+        opacity: 0;
+    }
+    .up{
+        color: blue ;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid 2px;
+    }
+}

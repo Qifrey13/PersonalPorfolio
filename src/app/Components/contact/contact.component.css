@@ -3,9 +3,9 @@
 }
 
 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #244858;
     padding-top: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    color: #ffff;
     padding-bottom: 15px;
 }
 
@@ -15,39 +15,40 @@ h1{
 }
 
 .flex-container-left{
-    padding: 10px;
     flex: 15%;
+    padding: 10px;
 }
 
 .flex-container-right{
-    padding: 10px;
     flex: 70%;
+    border-left: #e64833 2px solid;
+    padding: 10px;
     padding-bottom: 20px;
 }
 
 .flex-item-right-box{
-    border: #244858 solid 2px;
     background-color: #244858;
+    border: #244858 solid 2px;
     padding: 5vh;
     border-radius: 3px;
 }
 
 .flex-item-left-text{
     writing-mode: vertical-lr;
-    border-bottom: #e64833 2px solid;
-    padding-bottom: 20px;
+    color: #ffff;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: #ffff;
+    border-bottom: #e64833 2px solid;
+    padding-bottom: 20px;
 }
 
 
-/* YUNG ICONS TO */
+/* ICONS */
 i{
-    /* padding-top: 15px; */
-    padding-bottom: 5px;
-    font-size: 25px;
     color: #244858;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 i:hover{
     color: #e64833;    
@@ -70,23 +71,24 @@ i:hover{
     .flex-container-left{
         border: #244858 solid 2px;
     }
+    .flex-container-right{
+        border: none;
+    }
 }
 
 
 
 .CRUD{
-    flex: 30%;
-    /* border: 2px solid; */    
+    flex: 30%; 
     border-radius: 3px;
     padding: 20px;
 }
 
 
 .outer-container{
-    /* background-color: yellow; */
-    width: 100%;
     border-radius: 3px;
     padding: 10px;
+    width: 100%;
 }
 
 .input-add{
@@ -99,9 +101,9 @@ i:hover{
 
 input{
     font-size: 15px;
-    padding: 10px;
     border-radius: 3px;
     border: none;
+    padding: 10px;
     margin: 5px 0px;
     width: 100%;
 }
@@ -115,18 +117,18 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: grey;
     font-size: 30px;
     background-color: white;
     border: none;
+    border-radius: 3px;
     width: 40px;
     height: 40px;
-    border-radius: 3px;
-    color: grey;
 }
 
 .newTask:hover{
-    cursor: pointer;
     color: #e64833;
+    cursor: pointer;
 }
 
 .removeallcont{
@@ -138,28 +140,28 @@ input:focus{
 
 /* DELETE ALL BUTTON */
 .removeallcont button{
-    background-color: rgb(187, 93, 93);
-    border: none;
     color: white;
-    padding: 5px;
+    background-color: rgb(187, 93, 93);
     font-weight: 700;
+    border: none;
     border-radius: 3px;
+    padding: 5px;
     width: 50px;
     height: 50px;
 }
 
 .removeallcont button:hover{
-    background-color: white;
     color: rgb(187, 93, 93);
+    background-color: white;
     cursor: pointer;
 }
 
 .notes-card{
+    display: flex;
+    align-items: center;
     font-size: 18px;
     font-weight: 700;
     background-color: white;
-    display: flex;
-    align-items: center;
     border-radius: 3px;
     padding: 0px 10px;
     margin: 10px 0px;
@@ -174,24 +176,25 @@ input:focus{
     color: #e64833;
 }
 
-/* EDIT AND REMOVE ONLY ONE BUTTON SOY */
+
+/* EDIT AND REMOVE ONLY ONE BUTTON */
 .notes-card button{
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     color: #e64833;   
     font-size: 15px;
-    width: 30px;
-    height: 40px;
     border-radius: 3px;
     border: 1px solid #e64833;
-    align-items: center;
-    justify-content: center;
     padding-top: -20px;
+    width: 30px;
+    height: 40px;
 }
 
 .notes-card button:hover{
-    cursor: pointer;
-    background-color: rgb(187, 93, 93);;
     color: white;
+    background-color: rgb(187, 93, 93);;
+    cursor: pointer;
 }
 
 .allnotes{
